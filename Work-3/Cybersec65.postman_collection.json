@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "7d808f38-fb41-4312-a472-76137eb2e804",
+		"name": "Cybersec65",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23076215"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "Sg4sItvq6t0cLf6HRSC-bDB1RIlP5wOPDP1qzfBILFFR6RrHjr--HRJO",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"loginId\": \"demo@demo.com\",\r\n    \"password\": \"p@ssw0rd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9011/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImVmZjVlOWExYyJ9.eyJleHAiOjE2Nzg0MzE4NzAsImlhdCI6MTY3ODQyODI3MCwiaXNzIjoiYWNtZS5jb20iLCJzdWIiOiI5NGI0MGRmMi04MjZiLTQ1YjgtOGQ5Ny0yZjRhYjlmMjcwZTEiLCJqdGkiOiJkZmNhNjM5Ny0wZjUxLTQwOTAtOWQ0Yy1hYjEwNzU2NmZhMTEiLCJhdXRoZW50aWNhdGlvblR5cGUiOiJQQVNTV09SRCIsImVtYWlsIjoiZGVtb0BkZW1vLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZW1vIiwiYXV0aF90aW1lIjoxNjc4NDI4MjcwLCJ0aWQiOiIzMGNmOGY3NC1hMDZlLTg5YTAtZDFjNy1kMjIzYzRlNGVmZTIifQ.wpZ7ISV_Zp4VCwlxD2qV3_slelp0qgsNZerL3NycBvU",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"loginId\": \"demo2@demo.com\",\r\n    \"password\": \"p@ssw0rd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9011/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
